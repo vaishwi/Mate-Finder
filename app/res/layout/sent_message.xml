@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/sent_message_background">
+
+        <TextView
+            android:id="@+id/txt_sent_message"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:padding="10dp"
+            android:text="This is sent message"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtSentMessageTime"
+            android:layout_width="46dp"
+            android:layout_height="13dp"
+            android:paddingBottom="2dp"
+            android:text="18.25 AM"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="8sp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/txt_sent_message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.886"
+            app:layout_constraintStart_toStartOf="@+id/txt_sent_message"
+            app:layout_constraintTop_toTopOf="@+id/txt_sent_message"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

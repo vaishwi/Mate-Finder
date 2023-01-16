@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatSearchAndChatWithNew"
+    android:orientation="horizontal">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Connection"
+        android:queryBackground="@android:color/transparent"/>
+        />
+    <Button
+        android:id="@+id/btnNewGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="New Group" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/connectionListRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_marginTop="100dp"
+
+        tools:listitem="@layout/chat_user_item" />
+
+
+</RelativeLayout>

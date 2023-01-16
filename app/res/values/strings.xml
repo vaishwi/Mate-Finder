@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Mate Connect</string>
+    <string name="primary_color">Primary color</string>
+    <string name="button">Button</string>
+    <string name="secondary_color">Secondary color</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="name">Name</string>
+
+    <string name="menu_home_text">Home</string>
+    <string name="menu_connection_text">Connections</string>
+    <string name="menu_map_text">Map</string>
+    <string name="menu_account_text">Account</string>
+    <string name="menu_search_text">Search</string>
+    <string name="menu_chat_text">Message</string>
+
+    <string name="home_tab_all">All</string>
+    <string name="home_tab_suggested">Suggested</string>
+    <string name="home_tab_popular">Popular</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="list_item_one">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="list_item_two">
+        <item>Sharing</item>
+        <item>Single</item>
+    </string-array>
+    <string-array name="list_item_three">
+        <item>Vegetarian</item>
+        <item>Non Vegetarian</item>
+    </string-array>
+    <string-array name="list_item_four">
+        <item>Canada</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="list_item_five">
+        <item>Clayton Park</item>
+        <item>Lacewood Drive</item>
+    </string-array>
+    <string-array name="list_item_six">
+        <item>Friends</item>
+        <item>Roommates</item>
+        <item>Sub-lease</item>
+    </string-array>
+
+    <string name="editProfile">Edit Profile</string>
+    <string name="university">University</string>
+    <string name="hometown">Hometown</string>
+    <string name="currentAddress">Current Address</string>
+    <string name="previousWork">Past Workplace</string>
+    <string name="previousWorkLocation">Past Work Location</string>
+    <string name="bug">Report Bug</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+
+    <string name="foodPreference">Food Preference</string>
+    <string name="veg">Vegetarian</string>
+
+    <string name="interested">Looking For</string>
+    <string name="roommates">Roommates</string>
+    <string name="friends">Friends</string>
+
+    <string name="roomPreference">Room Preference</string>
+    <string name="single">Single</string>
+    <string name="sharing">Sharing</string>
+
+</resources>

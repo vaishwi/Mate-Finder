@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- reference -->
+<!-- https://medium.com/@muhamed.riyas/navigation-component-the-complete-guide-c51c9911684-->
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/welcomeScreen">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mateconnect.HomeFragment"
+        android:label="@string/menu_home_text"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <argument
+            android:name="email"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_homeFragment_to_chatListFragment"
+            app:destination="@id/chatListFragment" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/mapFragment"-->
+<!--        android:name="com.example.mateconnect.MapFragment"-->
+<!--        android:label="@string/menu_map_text"-->
+<!--        tools:layout="@layout/fragment_map" >-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mateconnect.SearchFragment"
+        android:label="@string/menu_search_text"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_filterConnectionFragment"
+            app:destination="@id/filterConnectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.mateconnect.AccountFragment"
+        android:label="@string/menu_account_text"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_inviteFragment"
+            app:destination="@id/inviteFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_bugReportFragment"
+            app:destination="@id/bugReportFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_filterConnectionFragment"
+            app:destination="@id/filterConnectionFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectionsFragment"
+        android:name="com.example.mateconnect.ConnectionsFragment"
+        android:label="@string/menu_connection_text"
+        tools:layout="@layout/fragment_connections" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/inviteFragment"
+        android:name="com.example.mateconnect.InviteFragment"
+        android:label="Invite Friend"
+        tools:layout="@layout/fragment_invite" >
+        <action
+            android:id="@+id/action_inviteFragment_to_inviteResponseFragment"
+            app:destination="@id/inviteResponseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mateConnect.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="firstSignin"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.mateConnect.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.example.mateConnect.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/chatListFragment"
+        android:name="com.example.mateconnect.ChatListFragment"
+        android:label="fragment_chat_list"
+        tools:layout="@layout/fragment_chat_list" >
+        <action
+            android:id="@+id/action_chatListFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatRoomFragment"
+        android:name="com.example.mateconnect.ChatRoomFragment"
+        android:label="fragment_chat_room"
+        tools:layout="@layout/fragment_chat_room" >
+        <action
+            android:id="@+id/action_chatRoomFragment_to_chatListFragment"
+            app:destination="@id/chatListFragment" />
+        <argument
+            android:name="chatUser"
+            app:argType="com.example.mateconnect.models.User" />
+        <action
+            android:id="@+id/action_chatRoomFragment_to_chatSearchAndChatWithNew"
+            app:destination="@id/chatSearchAndChatWithNew" />
+        />
+    </fragment>
+    <fragment android:id="@+id/welcomeScreen"
+        android:name="com.example.mateconnect.WelcomeScreenFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome_screen" />
+
+    <fragment
+        android:id="@+id/inviteResponseFragment"
+        android:name="com.example.mateconnect.InviteResponseFragment"
+        android:label="Invite Friend Response"
+        tools:layout="@layout/fragment_invite_response" />
+    <fragment
+        android:id="@+id/bugReportFragment"
+        android:name="com.example.mateconnect.BugReportFragment"
+        android:label="Customer Support"
+        tools:layout="@layout/fragment_bug_report" >
+        <action
+            android:id="@+id/action_bugReportFragment_to_bugResponseFragment"
+            app:destination="@id/bugResponseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bugResponseFragment"
+        android:name="com.example.mateconnect.BugResponseFragment"
+        android:label="Customer Support Response"
+        tools:layout="@layout/fragment_bug_response" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.mateconnect.ChatFragment"
+        android:label="Chats"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/filterConnectionFragment"
+        android:name="com.example.mateconnect.FilterConnectionFragment"
+        android:label="Filter Connections"
+        tools:layout="@layout/fragment_filter_connection" >
+        <action
+            android:id="@+id/action_filterConnectionFragment_to_filterResultFragment"
+            app:destination="@id/filterResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.mateconnect.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="firstLogin"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeAllConnectionsFragment"
+        android:name="com.example.mateconnect.HomeAllConnectionsFragment"
+        android:label="fragment_home_all_connections"
+        tools:layout="@layout/fragment_home_all_connections" >
+        <action
+            android:id="@+id/action_homeAllConnectionsFragment_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragement"
+        android:name="com.example.mateconnect.NotificationFragement"
+        android:label="Notification" />
+    <fragment
+        android:id="@+id/chatSearchAndChatWithNew"
+        android:name="com.example.mateconnect.chatSearchAndChatWithNew"
+        android:label="fragment_chat_search_and_chat_with_new"
+        tools:layout="@layout/fragment_chat_search_and_chat_with_new" >
+        <action
+            android:id="@+id/action_chatSearchAndChatWithNew_to_chatRoomFragment"
+            app:destination="@id/chatRoomFragment" />
+        <action
+            android:id="@+id/action_chatSearchAndChatWithNew_to_groupChatCreationFragment"
+            app:destination="@id/groupChatCreationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupChatCreationFragment"
+        android:name="com.example.mateconnect.GroupChatCreationFragment"
+        android:label="fragment_group_chat_creation"
+        tools:layout="@layout/fragment_group_chat_creation" />
+    <fragment
+        android:id="@+id/filterResultFragment"
+        android:name="com.example.mateconnect.FilterResultFragment"
+        android:label="Filter Connections"
+        tools:layout="@layout/fragment_filter_result" />
+</navigation>
