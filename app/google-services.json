@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "679161371651",
+    "project_id": "mateconnect-72c74",
+    "storage_bucket": "mateconnect-72c74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679161371651:android:9d0d0275efc7c367a44236",
+        "android_client_info": {
+          "package_name": "com.example.mateConnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679161371651-6004frb984hui3niuhuq1e7dnlmgr1s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh_s-z4rOYylsnVVgi9YWMfoXiPhewPHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679161371651-6004frb984hui3niuhuq1e7dnlmgr1s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679161371651:android:beb70368aa8bb9f7a44236",
+        "android_client_info": {
+          "package_name": "com.example.mateconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679161371651-6004frb984hui3niuhuq1e7dnlmgr1s6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh_s-z4rOYylsnVVgi9YWMfoXiPhewPHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679161371651-6004frb984hui3niuhuq1e7dnlmgr1s6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
